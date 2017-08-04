@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 121
+  controlID: 105
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 122
+  controlID: 106
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,8 +179,8 @@ MonoBehaviour:
     y: 429
     width: 1041
     height: 518
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 61
+  controlID: 129
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -390,14 +390,14 @@ MonoBehaviour:
     width: 1039
     height: 408
   m_SceneLighting: 1
-  lastFramingTime: 1507.2883066502998
+  lastFramingTime: 177.77312849817505
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 749.96246, y: 6.435379, z: 249.27896}
+    m_Target: {x: 372.17633, y: 49.790466, z: 366.91022}
     speed: 2
-    m_Value: {x: 749.96246, y: 6.435379, z: 249.27896}
+    m_Value: {x: 372.17633, y: 49.790466, z: 366.91022}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -420,13 +420,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.21202193, y: 0.47006994, z: -0.117433384, w: 0.8486993}
+    m_Target: {x: 0.44884786, y: 0.41285673, z: -0.2459715, w: 0.753381}
     speed: 2
-    m_Value: {x: 0.21202193, y: 0.47006994, z: -0.117433384, w: 0.8486993}
+    m_Value: {x: 0.44884786, y: 0.41285673, z: -0.2459715, w: 0.753381}
   m_Size:
-    m_Target: 200.05186
+    m_Target: 296.06042
     speed: 2
-    m_Value: 200.05186
+    m_Value: 296.06042
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -491,9 +491,9 @@ MonoBehaviour:
     height: 427
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a02a0000
-    m_LastClickedID: 0
-    m_ExpandedIDs: e2fbffff000000006a2b0000882b0000be2b0000162c0000862c0000b22c00000e2d00009a2d00000a2e0000
+    m_SelectedIDs: 903a0000
+    m_LastClickedID: 14992
+    m_ExpandedIDs: 9cd2ffff6ee2ffff0000000000390000343a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -553,19 +553,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\mohanzalake\Desktop\Project-Stranded
+  m_LastProjectPath: M:\Github\GitHub\Stranded_GatorVR\Stranded
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0c280000
-    m_LastClickedID: 10252
-    m_ExpandedIDs: 00000000e8250000e8270000b0280000dc280000462a00000e31000010310000123100001431000016310000183100001a31000000ca9a3bffffff7f
+    m_SelectedIDs: 3e350000
+    m_LastClickedID: 13630
+    m_ExpandedIDs: 000000003e350000b4360000423700006037000086380000dc3b0000de3b0000e03b0000e23b0000e43b0000e63b0000e83b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,7 +593,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8250000e8270000b0280000dc2800000e31000010310000123100001431000016310000183100001a310000
+    m_ExpandedIDs: 000000003e350000b4360000423700006037000086380000dc3b0000de3b0000e03b0000e23b0000e43b0000e63b0000e83b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -111,6 +111,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Player_Water_Notification.cs" />
      <Compile Include="Assets\Scripts\TestScript.cs" />
+     <Compile Include="Assets\Scripts\TriggerStay.cs" />
      <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
      <None Include="Assets\Scene_Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
      <None Include="Assets\OVRInspector\Shaders\Particle Alpha Blend-AfterTrans-TransAlphaCutoff.shader" />

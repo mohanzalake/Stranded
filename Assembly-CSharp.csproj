@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{016623B2-3554-BF14-68E6-C01E19F1E25A}</ProjectGuid>
+    <ProjectGuid>{C061FC8B-DB08-2AC1-48F1-9834EFDE4F3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -107,23 +107,31 @@
      <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRProgressIndicator.cs" />
      <Compile Include="Assets\Scene_Assets\Destroyed_city_FREE\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scene_Assets\Destroyed_city_FREE\Standard Assets\Water (Pro Only)\Sources\Scripts\Water.cs" />
-     <Compile Include="Assets\Scripts\Food.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Player_Water_Notification.cs" />
-     <Compile Include="Assets\Scripts\TestScript.cs" />
-     <Compile Include="Assets\Scripts\TriggerStay.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Food.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Player_Water_Notification.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\TestScript.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\TriggerStay.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\VRButton.cs" />
      <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
      <None Include="Assets\Scene_Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
+     <None Include="Assets\OVRInspector\Resources\Quit.txt" />
      <None Include="Assets\OVRInspector\Shaders\Particle Alpha Blend-AfterTrans-TransAlphaCutoff.shader" />
      <None Include="Assets\OVRInspector\Shaders\Particle-Alpha-Premultiply-AfterTrans.shader" />
+     <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTest.shader" />
+     <None Include="Assets\OVRInspector\Resources\OVRSettings.txt" />
      <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTestFont.shader" />
      <None Include="Assets\OVR\Resources\Alpha Premultiply.shader" />
      <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
      <None Include="Assets\OVR\Resources\OVRMRCameraFrame.shader" />
      <None Include="Assets\OVR\Resources\OVRMRClipPlane.shader" />
+     <None Include="Assets\OVRInspector\LICENSE.txt" />
+     <None Include="Assets\OVRInspector\Resources\UISettings.txt" />
      <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
      <None Include="Assets\OVR\Plugins\placeholder.txt" />
      <None Include="Assets\Scene_Assets\Destroyed_city_FREE\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Menu_Assets\Wispy Sky\ReadMe.txt" />
      <None Include="Assets\Scene_Assets\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
      <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
  <Reference Include="UnityEngine.UI">
@@ -147,10 +155,16 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F76AD4C4-3424-B032-ED28-72FC30D70D75}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{FC96C6C6-FAAA-5C0C-278E-AA13A1103DC6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

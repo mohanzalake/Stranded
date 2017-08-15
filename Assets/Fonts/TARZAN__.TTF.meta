@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 60dd2de88f24e3441bb4d4eb5825638d
+timeCreated: 1502202294
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tarzan
+  fontNames:
+  - Tarzan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

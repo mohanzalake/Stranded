@@ -174,6 +174,7 @@ public class OVRGazePointer : MonoBehaviour {
     void Update () 
     {
         // Move the gaze cursor to keep it in the middle of the view
+        if(rayTransform!=null)
         transform.position = rayTransform.position + rayTransform.forward * depth;
 
         // Should we show or hide the gaze cursor?
@@ -233,6 +234,7 @@ public class OVRGazePointer : MonoBehaviour {
         {
             // No geometry intersections, so gazing into space. Make the cursor face directly at the camera
             Quaternion newRot = transform.rotation;
+            if(rayTransform != null)
             newRot.SetLookRotation(rayTransform.forward, rayTransform.up);
             transform.rotation = newRot;
         }

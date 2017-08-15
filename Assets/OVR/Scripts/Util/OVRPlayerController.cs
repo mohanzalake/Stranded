@@ -95,18 +95,12 @@ public class OVRPlayerController : MonoBehaviour
 	private float SimulationRate = 60f;
 	private float buttonRotation = 0f;
 
-	//Footsteps Audio Source
-	private AudioSource footsteps;
-
 	void Start()
 	{
 		// Add eye-depth as a camera offset from the player controller
 		var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
 		CameraRig.transform.localPosition = p;
-		//Get footsteps AudioSource from this GameObject
-		footsteps = GetComponent<AudioSource>();
-
 	}
 
 	void Awake()
@@ -272,42 +266,25 @@ public class OVRPlayerController : MonoBehaviour
 		MoveScale *= SimulationRate * Time.deltaTime;
 
 		// Compute this for key movement
-		float moveInfluence = Acceleration * 0.35f * MoveScale * MoveScaleMultiplier;
+		float moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 
 		// Run!
 		if (dpad_move || Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-			moveInfluence *= 1.50f;
+			moveInfluence *= 2.0f;
 
 		Quaternion ort = transform.rotation;
 		Vector3 ortEuler = ort.eulerAngles;
 		ortEuler.z = ortEuler.x = 0f;
 		ort = Quaternion.Euler(ortEuler);
 
-		//Play Footsteps AudioSource
-		if (moveForward) {
+		if (moveForward)
 			MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * Vector3.forward);
-			if (!footsteps.isPlaying)
-				footsteps.Play ();
-		}
-		if (moveBack) {
+		if (moveBack)
 			MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * Vector3.back);
-			if (!footsteps.isPlaying)
-				footsteps.Play ();
-		}
-		if (moveLeft) {
+		if (moveLeft)
 			MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.left);
-			if (!footsteps.isPlaying)
-				footsteps.Play ();
-		}
-		if (moveRight) {
+		if (moveRight)
 			MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.right);
-			if (!footsteps.isPlaying)
-				footsteps.Play ();
-		}
-		//Stop Playing Footsteps
-		if (!moveForward && !moveBack && !moveLeft && !moveRight) {
-			footsteps.Stop ();
-		}
 
 		Vector3 euler = transform.rotation.eulerAngles;
 

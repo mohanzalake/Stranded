@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager GM = null;              //Static instance of GameManager which allows it to be accessed by any other script.
-
+  
+    // juliet comment
 
     //How to reference these variable
     //Example-> GameManager.GM.distanceFromFood

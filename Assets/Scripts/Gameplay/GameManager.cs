@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
 
     public static GameManager GM = null;              //Static instance of GameManager which allows it to be accessed by any other script.
   
-    // juliet comment
 
     //How to reference these variable
     //Example-> GameManager.GM.distanceFromFood
@@ -23,10 +22,17 @@ public class GameManager : MonoBehaviour
 
     public float timePassed = 0;
 
+    public GUIText gameOverText;
+    public GUIText restartText;
+
     public bool isWaterAreaExplored = false;
     public bool isFoodAreaExplored = false;
     public bool isShelterAreaExplored = false;
-	public GUIStyle guiLabel;
+    private bool gameOver;
+    private bool restart;
+    private int score;
+
+    public GUIStyle guiLabel;
     GameObject waterArea;
     GameObject foodArea;
     GameObject shelterArea;
@@ -90,6 +96,11 @@ public class GameManager : MonoBehaviour
             WaterBar.value = hydration / max_water;
         }
         temp = 1;
+
+        gameOver = false;
+        restart = false;
+        restartText.text = "";
+        gameOverText.text = "";
     }
 
     //Update is called every frame.
@@ -135,10 +146,27 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Game over :(");
         }
+        if (restart)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Application.LoadLevel(Application.loadedLevel);
+            }
+        }
+        if (gameOver)
+        {
+            restartText.text = "Press 'R' for Restart";
+            restart = true;
+            
+        }
     }
 
-
-	public void NotifyUser(){
+    public void GameOver()
+    {
+        gameOverText.text = "Game Over!";
+        gameOver = true;
+    }
+        public void NotifyUser(){
 		//Do Something
 		Debug.Log("Notified");
 

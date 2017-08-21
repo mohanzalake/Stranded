@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerStay: MonoBehaviour {
 	
@@ -11,5 +12,6 @@ public class TriggerStay: MonoBehaviour {
     private void OnTriggerStay (Collider player)
     {
         Debug.Log("player is within the trigger");
+        SceneManager.LoadScene("Success");
     }   
 }

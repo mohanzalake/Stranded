@@ -22,4 +22,9 @@ public class VRButton : MonoBehaviour {
 	public void loadHurricaneScene() {
 		SceneManager.LoadScene (1);
 	}
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -127,15 +128,18 @@ public class GameManager : MonoBehaviour
        if(minutes==temp)
         {
             temp+=1;
+            if(hydration>=10)
             hydration -= 10;
            
             if(hydration<=40)
             {
+                if(health>=10)
                 health -= 10;
             }
             else
             {
-                health -= 5;
+                if (health >= 5)
+                    health -= 5;
             }  
         }
         if (WaterBar != null)
@@ -144,6 +148,7 @@ public class GameManager : MonoBehaviour
             HealthBar.value = health / max_health;
         if (health==0 || hydration==0)
         {
+            SceneManager.LoadScene("GameOver");
             Debug.Log("Game over :(");
         }
         if (restart)
@@ -166,10 +171,11 @@ public class GameManager : MonoBehaviour
         gameOverText.text = "Game Over!";
         gameOver = true;
     }
-        public void NotifyUser(){
-		//Do Something
-		Debug.Log("Notified");
 
-	}
+
+
+
+
+
 
 }
